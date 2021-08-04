@@ -6,13 +6,17 @@ const Card = ({
     width,
     height,
     maxWidth,
+    minWidth,
+    minHeight,
     margin,
     padding
 }) => {
     return (
         <CardContainer
-            width={height}
+            height={height}
             width={width}
+            minHeight={minHeight}
+            minWidth={minWidth}
             maxWidth={maxWidth}
             margin={margin}
             padding={padding}

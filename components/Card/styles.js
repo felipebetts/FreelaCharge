@@ -11,12 +11,14 @@ export const CardContainer = styled.div`
     
     padding: 16px;
     
-    background: ${({ theme }) => theme.colors.white};
+    background: ${({ theme }) => theme.colors.text.white };
     border-radius: 8px;
     box-shadow: ${({ theme }) => theme.boxShadow };
     
     ${(props) => props.width ? `width: ${props.width};` : ''}
     ${(props) => props.height ? `height: ${props.height};` : ''}
+    ${(props) => props.minWidth ? `min-width: ${props.minWidth};` : ''}
+    ${(props) => props.minHeight ? `min-height: ${props.minHeight};` : ''}
     ${(props) => props.maxWidth ? `max-width: ${props.maxWidth};` : ''}
     ${(props) => props.maxHeight ? `max-height: ${props.maxHeight};` : ''}
     ${(props) => props.margin ? `margin: ${props.margin};` : ''}

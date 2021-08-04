@@ -15,6 +15,7 @@ html, body {
     // min-height: 100%;
     // height: 100%;
     // width: 100%;
+    background-color: #E4E9F2;
 }
 
 
@@ -22,24 +23,37 @@ html, body {
 
 const theme = {
     colors: {
-        primary: '#54DEFD',
-        secondary: '#00BD9D',
-        tertiary: '#49C6E5',
-        fourth: '#8BD7D2',
-        white: '#FFFBFA',
-        dark: '#0F0029',
+        primary: {
+          ocean: '#03BAFF',
+          blue: '#5150E9',
+          purple: '#5823E3',
+          dark: '#0F0029',
+          fadedDark: 'rgba(15, 0, 41, 0.3)',
+        },
         text: {
-            neutral600: '#333A46',
-            neutral400: '#7E8AA4',
-            neutral200: '#C5CEE0',
-            white: '#FFFFFF'
+          neutral600: '#333A46',
+          neutral400: '#7E8AA4',
+          neutral200: '#C5CEE0',
+          white: '#FFFFFF'
+        },
+        status: {
+          destructive: '#E13600',
+          warning: '#FFB800',
+          success: '#049601'
+        },
+        cards: {
+          neutral40: '#F7F9FC',
+          neutral60: '#E4E9F2',
         },
         button: {
-            primary: '#5823E3',
-            disabled: '#E4E9F2'
+          primary: '#5823E3',
+          disabled: '#E4E9F2'
         },
-    },
-    boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.16)',
+        grayscale: {
+          divider: '#dfe0eb',
+        },
+      },
+      boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.16)',
 }
 
 function MyApp({ Component, pageProps }) {

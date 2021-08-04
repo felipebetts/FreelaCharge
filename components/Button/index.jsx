@@ -1,5 +1,5 @@
 import { StyledButton } from "./styles"
-import { useLoading, Puff } from "@agney/react-loading"
+import Loading from '../Loading'
 
 
 const Button = ({
@@ -18,10 +18,7 @@ const Button = ({
 
 }) => {
 
-    const { containerProps, indicatorEl } = useLoading({
-        loading: true,
-        indicator: <Puff width='50' />
-    })
+
 
     if (isLoading) {
         return (
@@ -37,7 +34,7 @@ const Button = ({
                 margin={margin}
                 padding={padding}
             >
-                <section { ...containerProps}>{indicatorEl}</section>
+                <Loading />
             </StyledButton>
         )
     }
