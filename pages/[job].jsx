@@ -74,7 +74,7 @@ const JobPage = () => {
                             width='100%'
                         >
                             <Stripe
-                                height='200px'
+                                minHeight='200px'
                             >
                                 {(job && jobName && jobValue) ? (
                                     <Flex

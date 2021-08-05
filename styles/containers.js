@@ -67,6 +67,7 @@ export const Stripe = styled.div`
     background: ${({ theme }) => theme.colors.text.white };
     width: 100%;
     ${(props) => props.height ? `height: ${props.height};` : ''}
+    ${(props) => props.minHeight ? `min-height: ${props.minHeight};` : ''}
 
 
     padding: 1rem 2rem;

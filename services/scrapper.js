@@ -3,7 +3,7 @@ import { formatQueryString } from '../utils/format'
 
 const api = axios.create({
     baseURL: 'http://localhost:4000',
-    timeout: 5000,
+    // timeout: 5000,
     headers: {
         'X-Requested-With': 'XMLHttpRequest',
         'Content-type': 'application/json',
